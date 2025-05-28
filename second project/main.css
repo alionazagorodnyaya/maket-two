@@ -4,26 +4,20 @@
 	box-sizing: border-box;
 }
 
-.header {
-	display: flex;
-}
 .header__wrapper {
-	width: 1440px;
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
 	margin: 0;
 	padding: 20px 0;
 }
 .header__menu {
 	display: flex;
-	flex-direction: column;
+	align-items: center;
 	justify-content: space-between;
-	width: 600px;
+	margin: 20px;
 }
 .header__info {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 .header__text {
 	display: flex;
@@ -36,6 +30,9 @@
 }
 .header__text > p {
 	font-size: 14px;
+	margin-left: 10px;
+	padding-left: 10px;
+	border-left: 2px solid rgba(254, 200, 11, 1);
 }
 .header__text > b {
 	font-size: 22px;
@@ -64,36 +61,71 @@
 	align-items: center;
 	justify-content: space-between;
 	margin: 26px;
-	width: 100%;
 }
 .header__links {
 	display: flex;
 	justify-content: space-between;
-	width: 100%;
+
 	list-style: none;
 	padding: 0;
-	margin: 0;
+	margin-left: 20px;
 }
-.item__nav-links {
-	display: flex;
-}
+
 .header__nav-link {
-	margin-right: 20px;
+	margin-right: 80px;
 }
-.item__catalog {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-right: 41px;
-	background-color: rgba(254, 200, 11, 1);
-}
-.catalog__btn {
-	padding-left: 30px;
-	height: 42px;
-	background-color: rgba(254, 200, 11, 1);
+.btn {
 	border: none;
+	background-color: rgba(254, 200, 11, 1);
+	padding: 10px;
+	display: flex;
+	border-radius: 4px;
+}
+.btn i {
+	margin-right: 10px;
 }
 .header__nav-link > a {
 	text-decoration: none;
 	color: black;
+}
+.header__catalog {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-right: 30px;
+	width: 100%;
+	border-top: 1px solid rgba(254, 200, 11, 1);
+}
+.header__tools {
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+}
+.input-controller {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+.input-controller input {
+	width: 100%;
+	padding: 5px;
+	border-radius: 30px;
+	height: 36px;
+	width: 312px;
+
+	border: 1px solid rgba(254, 200, 11, 1);
+}
+.input-controller i {
+	position: absolute;
+
+	right: 10px;
+}
+.item-controller {
+	display: flex;
+	align-items: center;
+	margin: 20px;
+	font-size: 30px;
+}
+.item-controller span {
+	margin: 16px;
 }
