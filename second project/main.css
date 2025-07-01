@@ -7,7 +7,17 @@
 .header__wrapper {
 	margin: 0;
 	padding: 20px 0;
+
+	justify-content: center;
 }
+.header__container {
+	max-width: 1440px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
 .header__menu {
 	display: flex;
 	align-items: center;
@@ -100,6 +110,7 @@
 	display: flex;
 	align-items: center;
 	margin-left: auto;
+	max-width: 400px;
 }
 .input-controller {
 	position: relative;
@@ -137,7 +148,16 @@
 	background-size: 135%;
 	background-position: left bottom;
 	position: relative;
+	background-size: cover;
 }
+.banner__container {
+	max-width: 1440px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
 .banner__info {
 	color: aliceblue;
 	position: absolute;
@@ -208,18 +228,25 @@
 	background-color: white;
 	margin: 5px;
 }
+.categories__container {
+	max-width: 1440px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
 .categories {
 	display: flex;
 	justify-content: space-between;
 }
 .categories__text {
 	margin-top: 80px;
-	margin-left: 60px;
+
 	display: flex;
 }
 .categories__arrow {
 	margin-top: 80px;
-	margin-right: 60px;
+
 	display: flex;
 	align-items: center;
 }
@@ -237,8 +264,6 @@
 	display: flex;
 	justify-content: space-between;
 	margin-top: 32px;
-	margin-right: 60px;
-	margin-left: 60px;
 }
 .category-img {
 	width: 312px;
@@ -264,6 +289,91 @@
 .category-img__info > p {
 	font-size: 16px;
 	color: rgba(161, 161, 161, 1);
+}
+.company__container {
+	max-width: 1440px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+	margin-top: 158px;
+	box-sizing: border-box;
+	justify-content: flex-start;
+	display: flex;
+	background-image: url("images/truck3.svg");
+	background-repeat: no-repeat;
+	background-position: calc(100% - 60px) center;
+	min-height: 550px;
+}
+.rustrack {
+	color: rgba(254, 200, 11, 1);
+}
+.about__company {
+	position: relative;
+}
+.text-about > p {
+	width: 78%;
+	margin-top: 22px;
+	font-size: 20px;
+}
+
+.text-about {
+	width: 536px;
+}
+.company-btn {
+	background-color: rgba(254, 200, 11, 1);
+	color: black;
+	border: none;
+	min-width: 175px;
+	height: 44px;
+	padding-top: 6px;
+	margin-top: 64px;
+	padding-bottom: 6px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	border-radius: 4px;
+}
+.company-btn i {
+	font-size: 16px;
+}
+.company-btn > span {
+	padding-right: 10px;
+}
+.company-result__container {
+	max-width: 1440px;
+	max-height: 550px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+.company-result {
+	display: flex;
+	justify-content: space-around;
+	background-color: rgba(254, 200, 11, 1);
+	padding: 64px 0;
+}
+.company-result__item {
+	width: 30%;
+}
+.result__number {
+	font-size: 100px;
+}
+
+.result__text {
+	display: flex;
+	font-size: 32px;
+}
+.company-result__item > span {
+	font-size: 24px;
+	font-weight: 400px;
+	margin-left: 8px;
+}
+.company-result__item p {
+	font-size: 16px;
+	margin-top: 24px;
+	line-height: 150%;
 }
 @media (max-width: 768px) {
 	* {
@@ -309,5 +419,21 @@
 	}
 	.header__info {
 		margin-left: 10px;
+	}
+	.categories {
+		width: 100%;
+	}
+	.item-controller {
+		display: flex;
+	}
+	.input-controller {
+		display: flex;
+	}
+}
+@media (max-width: 1024px) {
+	.item-controller {
+	}
+	.input-controller {
+		width: 50%;
 	}
 }
