@@ -432,6 +432,83 @@
 	line-height: 150%;
 	width: 250px;
 }
+.production__container {
+	max-width: 1440px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+	box-sizing: border-box;
+	margin-top: 156px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.production__circle {
+	position: relative;
+	width: 590px;
+	height: 590px;
+}
+
+.point_dot1 {
+	position: absolute;
+	top: 20px;
+	left: 330px;
+	width: 279px;
+}
+.point_dot2 {
+	position: absolute;
+	top: 150px;
+	left: 450px;
+	width: 279px;
+	color: rgba(161, 161, 161, 1);
+}
+.point_dot3 {
+	position: absolute;
+	top: 290px;
+	left: 490px;
+	width: 279px;
+	color: rgba(161, 161, 161, 1);
+}
+.point_dot4 {
+	position: absolute;
+	top: 440px;
+	left: 450px;
+	width: 200px;
+	color: rgba(161, 161, 161, 1);
+}
+.point_dot5 {
+	position: absolute;
+	top: 550px;
+	left: 340px;
+	width: 279px;
+	color: rgba(161, 161, 161, 1);
+}
+
+.production__content {
+	width: 424px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.production__content > img {
+	margin-bottom: 32px;
+}
+.production__info {
+	position: relative;
+	display: flex;
+	padding-left: 30px;
+	margin-bottom: 100px;
+	height: 100%;
+	align-items: center;
+}
+.yellow-line {
+	position: absolute;
+	left: 10px;
+	background-color: rgba(254, 200, 11, 1);
+	height: 377px;
+	width: 3px;
+}
 @media (max-width: 1333px) {
 	* {
 		margin: 0px;
@@ -759,5 +836,77 @@
 	}
 	.company-result__item > p {
 		width: 100%;
+	}
+}
+@media (max-width: 1240px) {
+	.yellow-line {
+		display: none;
+	}
+	.production__content {
+		display: none;
+	}
+}
+@media (max-width: 850px) {
+	.production__circle > img {
+		position: relative;
+		width: 520px;
+		height: 520px;
+	}
+
+	.point_dot1 {
+		position: absolute;
+		top: 20px;
+		left: 270px;
+		width: 279px;
+	}
+	.point_dot2 {
+		position: absolute;
+		top: 150px;
+		left: 350px;
+		width: 279px;
+		color: rgba(161, 161, 161, 1);
+	}
+	.point_dot3 {
+		position: absolute;
+		top: 180px;
+		left: 370px;
+		width: 270px;
+		color: rgba(161, 161, 161, 1);
+	}
+	.point_dot4 {
+		position: absolute;
+		top: 290px;
+		left: 350px;
+		width: 200px;
+		color: rgba(161, 161, 161, 1);
+	}
+	.point_dot5 {
+		position: absolute;
+		top: 370px;
+		left: 270px;
+		width: 279px;
+		color: rgba(161, 161, 161, 1);
+	}
+}
+@media (max-width: 500px) {
+	.point_dot1 {
+		position: static;
+		color: black;
+	}
+	.point_dot2 {
+		position: static;
+		color: black;
+	}
+	.point_dot3 {
+		color: black;
+		position: static;
+	}
+	.point_dot4 {
+		position: static;
+		color: black;
+	}
+	.point_dot5 {
+		position: static;
+		color: black;
 	}
 }
