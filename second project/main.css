@@ -244,7 +244,7 @@
 	display: flex;
 	justify-content: space-between;
 }
-.categories__text {
+.categories__navigation {
 	margin-top: 80px;
 
 	display: flex;
@@ -534,7 +534,7 @@
 	justify-content: space-between;
 	background-color: rgba(249, 249, 249, 1);
 }
-.recomendation__text {
+.recomendation__navigation {
 	margin-top: 80px;
 
 	display: flex;
@@ -698,6 +698,86 @@
 	border: none;
 }
 .recomendation__wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+.news__container {
+	margin-top: 195px;
+	max-width: 1440px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+	box-sizing: border-box;
+
+	background-color: rgba(249, 249, 249, 1);
+}
+.news__content {
+	display: flex;
+	justify-content: space-between;
+	background-color: rgba(249, 249, 249, 1);
+}
+.news__navigation {
+	margin-top: 80px;
+
+	display: flex;
+}
+.news__arrow {
+	margin-top: 80px;
+
+	display: flex;
+	align-items: center;
+}
+.arrow__left {
+	margin: 5px;
+	cursor: pointer;
+}
+.news__arrow > p {
+	margin: 5px;
+}
+.news__card {
+	width: 312px;
+	height: 361px;
+	padding-top: 32px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.news__card > img {
+	width: 100%;
+}
+.news__date {
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+.news__title {
+	font-size: 18px;
+	width: 286px;
+}
+.news__link {
+	font-size: 18px;
+	text-decoration: none;
+	color: rgba(161, 161, 161, 1);
+	display: flex;
+	align-items: center;
+	margin-top: 35px;
+}
+.news__card_hide1000px {
+	width: 312px;
+	height: 361px;
+	padding-top: 32px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.news__card_hide700px {
+	width: 312px;
+	height: 361px;
+	padding-top: 32px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.news__wrapper {
 	display: flex;
 	justify-content: space-between;
 }
@@ -1166,7 +1246,10 @@
 	}
 }
 @media (max-width: 1906px) {
-	.recomendation__text > h2 {
+	.recomendation__navigation > h2 {
+		display: none;
+	}
+	.news-hide {
 		display: none;
 	}
 }
@@ -1215,10 +1298,10 @@
 	.recomendation__arrow > p {
 		display: none;
 	}
-	.recomendation__text > h1 {
+	.recomendation__navigation > h1 {
 		display: none;
 	}
-	.recomendation__text > h2 {
+	.recomendation__navigation > h2 {
 		display: flex;
 		font-size: 28px;
 	}
@@ -1242,5 +1325,49 @@
 	}
 	.favorite {
 		font-size: 24px;
+	}
+}
+@media (max-width: 1308px) {
+	.news__card_hide700px {
+		display: none;
+	}
+	.news__card {
+		width: 228px;
+	}
+	.news__card_hide1000px {
+		width: 228px;
+	}
+	.news__title {
+		width: 100%;
+	}
+}
+@media (max-width: 737px) {
+	.news__card_hide1000px {
+		display: none;
+	}
+}
+@media (max-width: 518px) {
+	.news__card > img {
+		display: none;
+	}
+	.news__card > .news-hide {
+		display: flex;
+	}
+	.arrow__left {
+		display: none;
+	}
+	.arrow__right {
+		display: none;
+	}
+	.news__card {
+		width: 173px;
+	}
+	.news__title {
+		font-size: 16px;
+	}
+}
+@media (max-width: 397px) {
+	.news__card {
+		width: 136px;
 	}
 }
