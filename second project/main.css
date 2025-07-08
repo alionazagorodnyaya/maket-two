@@ -555,7 +555,7 @@
 .arrow__right {
 	cursor: pointer;
 }
-.category__wrapper {
+.recomendation__wrapper {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 32px;
@@ -702,19 +702,16 @@
 	justify-content: space-between;
 }
 .news__container {
-	margin-top: 195px;
 	max-width: 1440px;
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 20px;
 	box-sizing: border-box;
-
-	background-color: rgba(249, 249, 249, 1);
 }
 .news__content {
 	display: flex;
 	justify-content: space-between;
-	background-color: rgba(249, 249, 249, 1);
+	margin-top: 170px;
 }
 .news__navigation {
 	margin-top: 80px;
@@ -748,6 +745,7 @@
 .news__date {
 	font-size: 16px;
 	margin-bottom: 5px;
+	margin: 16px;
 }
 .news__title {
 	font-size: 18px;
@@ -760,6 +758,9 @@
 	display: flex;
 	align-items: center;
 	margin-top: 35px;
+}
+.news__link > i {
+	margin: 5px;
 }
 .news__card_hide1000px {
 	width: 312px;
@@ -778,6 +779,18 @@
 	justify-content: flex-start;
 }
 .news__wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+.mark__container {
+	max-width: 1440px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+	box-sizing: border-box;
+	margin-top: 128px;
+}
+.mark__content {
 	display: flex;
 	justify-content: space-between;
 }
@@ -1340,6 +1353,9 @@
 	.news__title {
 		width: 100%;
 	}
+	.news__content {
+		margin-top: 10px;
+	}
 }
 @media (max-width: 737px) {
 	.news__card_hide1000px {
@@ -1369,5 +1385,44 @@
 @media (max-width: 397px) {
 	.news__card {
 		width: 136px;
+	}
+}
+@media (max-width: 1150px) {
+	.mark__content > .zisl-hide {
+		display: none;
+	}
+	.mark__content > .yaz-hide {
+		display: none;
+	}
+	.mark__container {
+		margin-top: 70px;
+	}
+}
+@media (max-width: 925px) {
+	.mark__content > .foton-hide {
+		display: none;
+	}
+}
+@media (max-width: 788px) {
+	.mark__content > .niho-hide {
+		display: none;
+	}
+}
+@media (max-width: 646px) {
+	.mark__content > .isuzu-hide {
+		display: none;
+	}
+}
+@media (max-width: 516px) {
+	.mark__content > .gaz-hide {
+		display: none;
+	}
+	.mark__container {
+		margin-top: 30px;
+	}
+}
+@media (max-width: 431px) {
+	.mark__content > img {
+		width: 91px;
 	}
 }
