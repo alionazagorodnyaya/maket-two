@@ -3,7 +3,9 @@
 	padding: 0px;
 	box-sizing: border-box;
 }
-
+body {
+	font-family: "Fira sans", sans-serif;
+}
 .header__wrapper {
 	margin: 0 auto;
 	padding: 20px 0;
@@ -789,11 +791,71 @@
 	padding: 0 20px;
 	box-sizing: border-box;
 	margin-top: 128px;
+	position: relative;
 }
 .mark__content {
 	display: flex;
 	justify-content: space-between;
 }
+.question__container {
+	max-width: 1440px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+	box-sizing: border-box;
+	margin-top: 143px;
+	display: flex;
+	height: 338px;
+	background-color: rgba(242, 242, 242, 1);
+}
+.question__wrapper {
+	width: 1440px;
+	position: relative;
+	margin-left: 60px;
+}
+.question__title {
+	font-size: 42px;
+}
+.question__text {
+	font-size: 18px;
+	margin-top: 5px;
+}
+.question__contact {
+	margin-top: 38px;
+	display: flex;
+	align-items: flex-end;
+	margin-bottom: 20px;
+}
+.question__input > input {
+	width: 294px;
+	height: 44px;
+}
+.question__input {
+	margin-right: 19px;
+}
+.question__contact > button {
+	width: 185px;
+	height: 44px;
+	background-color: rgba(254, 200, 11, 1);
+	font-size: 16px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.question__img {
+	position: relative;
+	bottom: 80px;
+}
+.question__info {
+	margin-top: 60px;
+	display: flex;
+	flex-direction: column;
+}
+.question__policy {
+	font-size: 14px;
+	color: rgba(161, 161, 161, 1);
+}
+
 @media (max-width: 1333px) {
 	* {
 		margin: 0px;
@@ -1424,5 +1486,56 @@
 @media (max-width: 431px) {
 	.mark__content > img {
 		width: 91px;
+	}
+}
+@media (max-width: 1389px) {
+	.question__img > img {
+		display: none;
+	}
+}
+@media (max-width: 880px) {
+	.question__wrapper {
+		margin-left: 0px;
+	}
+}
+@media (max-width: 840px) {
+	.question__input > input {
+		width: 270px;
+	}
+	.question__input > button {
+		width: 140px;
+	}
+	.question__input {
+		margin-right: 10px;
+	}
+	.question__contact > button {
+		width: 140px;
+	}
+}
+@media (max-width: 750px) {
+	.question__contact {
+		flex-direction: column;
+		align-items: center;
+	}
+	.question__info {
+		align-items: center;
+		text-align: center;
+	}
+	.question__input {
+		width: 90%;
+		margin: 15px;
+	}
+	.question__input > input {
+		width: 100%;
+	}
+	.question__container {
+		height: 100%;
+	}
+	.question__policy {
+		text-align: center;
+	}
+
+	.question__contact > button {
+		width: 90%;
 	}
 }
